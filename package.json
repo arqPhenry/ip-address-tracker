@@ -1,0 +1,33 @@
+{
+  "name": "ip-address-tracker",
+  "version": "1.0.0",
+  "description": "IP Tracker tool\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Adr\u001b[C\u001b[C\u001b[C\u001b[C\u001b[CTool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compilescss": "npx sass src/styles/styles.scss styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arqPhenry/ip-address-tracker.git"
+  },
+  "keywords": [
+    "IP",
+    "Tracker",
+    "SASS",
+    "SCSS",
+    "API",
+    "CSS",
+    "HTML",
+    "JavaScript"
+  ],
+  "author": "Henry Navas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arqPhenry/ip-address-tracker/issues"
+  },
+  "homepage": "https://github.com/arqPhenry/ip-address-tracker#readme",
+  "dependencies": {
+    "sass": "^1.71.1"
+  }
+}

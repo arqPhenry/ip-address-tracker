@@ -1,0 +1,59 @@
+:root {
+  --blanco: #FFFFFF;
+  --blanco-2: #fafafa;
+  --gris-1: #eaeaea;
+  --gris-2: #999;
+  --gris-3: #888;
+  --gris-4: #666;
+  --negro-1: #444;
+  --negro-2: #333;
+  --negro-3: #171717;
+  --negro-4: #111;
+  --negro: #000;
+  --Very-Dark-Gray: hsl(0, 0%, 17%);
+  --Dark-Gray: hsl(0, 0%, 59%);
+}
+
+body {
+  font-family: "Rubik", Arial, sans-serif;
+  margin: 0;
+}
+body header {
+  background-image: url(./src/assets/images/pattern-bg-desktop.png);
+  min-height: 280px;
+  padding: 48px 24px;
+}
+body main .container {
+  height: 100vh;
+  position: relative;
+}
+body main .container .dashboard {
+  display: flex;
+  border: 1px solid var(--Dark-Gray);
+  position: absolute;
+  top: -79px;
+  border-radius: 12px;
+  padding: 24px 0;
+}
+body main .container .dashboard :last-child {
+  border: none;
+}
+body main .container .dashboard div {
+  padding: 0 24px;
+  border-right: 1px solid var(--Dark-Gray);
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 767px) {
+  body main .container .dashboard div {
+    align-items: center;
+    justify-content: center;
+  }
+}
+body main .container .dashboard p {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */

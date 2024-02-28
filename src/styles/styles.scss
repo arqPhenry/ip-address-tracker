@@ -1,0 +1,45 @@
+@use 'vars';
+
+body{
+    font-family: 'Rubik', Arial, sans-serif;
+    margin: 0;
+
+    header{
+        background-image: url(./src/assets/images/pattern-bg-desktop.png);
+        min-height: 280px;
+        padding: 48px 24px;
+    }
+
+    main{
+        .container{
+            height: 100vh;
+            position: relative;
+            .dashboard{
+                display: flex;
+                border: 1px solid var(--Dark-Gray);
+                position: absolute;
+                top: -79px;
+                border-radius: 12px;
+                padding: 24px 0;
+                :last-child{
+                    border: none;
+                }
+                div{
+                    padding: 0 24px;
+                    border-right: 1px solid var(--Dark-Gray);
+                    display: flex;
+                    flex-direction: column;
+                    @media (max-width: 767px){
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+                p{
+                    font-size: 18px;
+                    font-weight: 700;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
