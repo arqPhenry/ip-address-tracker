@@ -9,6 +9,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""/>
   <link href="styles.css" rel="stylesheet" type="text/css">
   
   <title>IP Address Tracker</title>
@@ -16,38 +19,38 @@
 <body>
   <header class="d-flex flex-column align-items-center">
     <h1>IP Address Tracker</h1>
-    <div class="seach">
-      <input id="input-ip">
-      <button id="obtenerIPbutton">-></button>
-    </div>
-  </header>
-  <main>
-    <div class="container d-flex justify-content-center">
+    <div class="container justify-content-center">
+      <div class="search">
+        <input id="input-ip" placeholder="Search for any IP address or domain">
+        <button id="obtenerIPbutton"><svg class="with-icon_icon__MHUeb" data-testid="geist-icon" fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24" style="color:var(--geist-foreground);width:24px;height:24px"><path d="M9 18l6-6-6-6"/></svg></button>
+      </div>
       <div class="row dashboard bg-white">
         <div class="col-md-3 col-xsm-12">
           <span class="tag">IP ADDRESS</span>
-          <p id="ip-text">192.212.8.101</p>
+          <p id="ip-text"></p>
         </div>
         <div class="col-md-3 col-xsm-12">
           <span class="tag">LOCATION</span>
-          <p id="city-text">Brooklyn, NY 10001</p>
+          <p id="city-text"></p>
         </div>
         <div class="col-md-3 col-xsm-12">
           <span class="tag">TIMEZONE</span>
-          <p id="timezone-text">GMT -05:00</p>
+          <p id="timezone-text"></p>
         </div>
         <div class="col-md-3 col-xsm-12">
           <span class="tag">ISP</span>
-          <p id="isp-text">Google SpaceX</p>
+          <p id="isp-text"></p>
         </div>
       </div>
     </div>
-    <div class="map-container"></div>
-  </main>
+  </header>
+  <div>
+    <div class="map-container" id="map"></div>
+  </div>
 
   <footer>
-    <div class="attribution">
-      Coded by <a href="#">Henry Navas</a>.
+    <div class="attribution container">
+      <p>Coded by <a href="https://henrynavasportfolio.netlify.app/" target="_blank">Henry Navas 🔗</a>.</p>
     </div>
   </footer>
 
@@ -55,6 +58,9 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
   <script src="index.js"></script>
 </body>
 </html>
