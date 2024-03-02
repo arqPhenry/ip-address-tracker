@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compilescss": "npx sass src/styles/optstyles.scss styles.css --watch"
+    "compilescss": "npx sass src/styles/styles.scss styles.css --watch"
   },
   "repository": {
     "type": "git",
