@@ -45,6 +45,12 @@ body header {
     padding: 24px;
   }
 }
+@media (max-width: 375px) {
+  body header {
+    background-image: url(./src/assets/images/pattern-bg-mobile.png);
+    min-height: 300px;
+  }
+}
 body header h1 {
   color: white;
   margin: 0;
@@ -91,7 +97,7 @@ body header .container {
 }
 @media (max-width: 767px) {
   body header .container {
-    bottom: -80%;
+    bottom: -300px;
   }
 }
 body header .container .dashboard {

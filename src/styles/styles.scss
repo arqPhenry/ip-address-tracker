@@ -31,7 +31,10 @@ body{
         @media (max-width: 767px){
             padding: 24px;
         }
-
+        @media (max-width: 375px){
+            background-image: url(./src/assets/images/pattern-bg-mobile.png);
+            min-height: 300px;
+        }
         position: relative;
         
         h1{
@@ -82,7 +85,7 @@ body{
             align-items: center;
 
             @media (max-width: 767px){
-                bottom: -80%;
+                bottom: -300px;
             }
 
             .dashboard{
