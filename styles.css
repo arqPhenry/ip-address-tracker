@@ -91,48 +91,49 @@ body header .container {
 }
 @media (max-width: 767px) {
   body header .container {
-    bottom: -70%;
+    bottom: -80%;
   }
 }
-body header .dashboard {
+body header .container .dashboard {
   display: flex;
   border: 1px solid var(--Dark-Gray);
   border-radius: 12px;
   padding: 24px 0;
+  box-shadow: 0px 11px 35px 0px rgba(0, 0, 0, 0.18);
 }
-body header .dashboard :last-child {
+body header .container .dashboard :last-child {
   border: none;
 }
 @media (max-width: 767px) {
-  body header .dashboard {
+  body header .container .dashboard {
     gap: 24px;
   }
 }
-body header .dashboard div {
+body header .container .dashboard div {
   padding: 0 24px;
   border-right: 1px solid var(--Dark-Gray);
   display: flex;
   flex-direction: column;
 }
 @media (max-width: 767px) {
-  body header .dashboard div {
+  body header .container .dashboard div {
     align-items: center;
     justify-content: center;
     border-right: none;
   }
 }
-body header .dashboard div span {
+body header .container .dashboard div span {
   font-size: 12px;
   color: var(--Dark-Gray);
   font-weight: 500;
 }
-body header .dashboard p {
+body header .container .dashboard p {
   font-size: 20px;
   font-weight: 700;
   margin: 0;
 }
 @media (max-width: 767px) {
-  body header .dashboard p {
+  body header .container .dashboard p {
     text-align: center;
   }
 }

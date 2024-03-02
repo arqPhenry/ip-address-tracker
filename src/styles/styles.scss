@@ -82,44 +82,45 @@ body{
             align-items: center;
 
             @media (max-width: 767px){
-                bottom: -70%;
+                bottom: -80%;
             }
-        }
 
-        .dashboard{
-            display: flex;
-            border: 1px solid var(--Dark-Gray);
-            border-radius: 12px;
-            padding: 24px 0;
-
-            :last-child{
-                border: none;
-            }
-            @media (max-width: 767px){
-                gap: 24px;
-            }
-            div{
-                padding: 0 24px;
-                border-right: 1px solid var(--Dark-Gray);
+            .dashboard{
                 display: flex;
-                flex-direction: column;
-                @media (max-width: 767px){
-                    align-items: center;
-                    justify-content: center;
-                    border-right: none;
+                border: 1px solid var(--Dark-Gray);
+                border-radius: 12px;
+                padding: 24px 0;
+                box-shadow: 0px 11px 35px 0px rgba(0,0,0,0.18);;
+    
+                :last-child{
+                    border: none;
                 }
-                span{
-                    font-size: 12px;
-                    color: var(--Dark-Gray);
-                    font-weight: 500;
-                }
-            }
-            p{
-                font-size: 20px;
-                font-weight: 700;
-                margin: 0;
                 @media (max-width: 767px){
-                    text-align: center;
+                    gap: 24px;
+                }
+                div{
+                    padding: 0 24px;
+                    border-right: 1px solid var(--Dark-Gray);
+                    display: flex;
+                    flex-direction: column;
+                    @media (max-width: 767px){
+                        align-items: center;
+                        justify-content: center;
+                        border-right: none;
+                    }
+                    span{
+                        font-size: 12px;
+                        color: var(--Dark-Gray);
+                        font-weight: 500;
+                    }
+                }
+                p{
+                    font-size: 20px;
+                    font-weight: 700;
+                    margin: 0;
+                    @media (max-width: 767px){
+                        text-align: center;
+                    }
                 }
             }
         }
