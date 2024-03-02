@@ -21,6 +21,7 @@ body{
 
     header{
         background-image: url(./src/assets/images/pattern-bg-desktop.png);
+        background-size: cover;
         min-height: 280px;
         padding: 48px 24px;
         display: flex;
@@ -28,12 +29,16 @@ body{
         gap: 24px;
         z-index: 2;
 
-        @media (max-width: 767px){
+        @media (max-width: 991px){
             padding: 24px;
+            min-height: 320px;
+        }
+        @media (max-width: 471px){
+            background-image: url(./src/assets/images/pattern-bg-mobile.png);
+            min-height: 350px;
         }
         @media (max-width: 375px){
-            background-image: url(./src/assets/images/pattern-bg-mobile.png);
-            min-height: 300px;
+            min-height: 370px;
         }
         position: relative;
         
@@ -85,7 +90,7 @@ body{
             align-items: center;
 
             @media (max-width: 767px){
-                bottom: -300px;
+                bottom: -200px;
             }
 
             .dashboard{
@@ -131,7 +136,7 @@ body{
 
     div{
         #map { 
-            min-height: 554px;
+            min-height: 600px;
             position: relative;
             z-index: 1;
         }
