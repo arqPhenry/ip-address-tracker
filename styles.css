@@ -24,8 +24,7 @@ body button {
   font-weight: 500;
   font-size: 0.875rem;
   line-height: 1.25rem;
-  transition-duration: 0.15s;
-  transition-timing-function: ease;
+  transition: 0.15s ease;
   border: none;
   display: flex;
   align-items: center;
@@ -55,7 +54,7 @@ body header {
 }
 @media (max-width: 375px) {
   body header {
-    min-height: 370px;
+    min-height: 400px;
   }
 }
 body header h1 {
@@ -68,17 +67,19 @@ body header .search {
   justify-content: center;
   width: 100%;
 }
-body header .search input {
+body header .search input, body header .search button {
   padding: 8px 16px;
-  border-radius: 12px 0 0 12px;
   font-weight: 400;
   border: none;
+}
+body header .search input::placeholder, body header .search button::placeholder {
+  font-weight: 400;
+}
+body header .search input {
+  border-radius: 12px 0 0 12px;
   min-width: 50px;
   max-width: 350px;
   width: 100%;
-}
-body header .search input ::placeholder {
-  font-weight: 400;
 }
 body header .search button {
   border-radius: 0 12px 12px 0;
@@ -112,7 +113,7 @@ body header .container .dashboard {
   border: 1px solid var(--Dark-Gray);
   border-radius: 12px;
   padding: 24px 0;
-  box-shadow: 0px 11px 35px 0px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 11px 35px 0 rgba(0, 0, 0, 0.18);
 }
 body header .container .dashboard :last-child {
   border: none;
