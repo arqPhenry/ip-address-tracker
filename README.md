@@ -10,6 +10,10 @@ IP Address Tracker is a web application that allows you to search for geographic
 - Visualize the location on an interactive map.
 - Display details such as IP address, location, time zone, and ISP.
 
+## Live Demo
+
+[Open it](https://ip-address-tracker-tool.netlify.app/)
+
 ## Technologies Used
 
 - HTML
